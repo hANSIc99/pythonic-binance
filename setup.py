@@ -2,13 +2,13 @@
 from setuptools import setup
 
 setup(
-    name='python-binance',
+    name='pythonic_binance',
     version='0.7.1',
-    packages=['pythonic-binance'],
+    packages=['pythonic_binance'],
     description='Binance REST API python implementation',
     url='https://github.com/hANSIc99/pythonic-binance',
     author='Sam McHardy',
-    #package_dir = {'' : 'binance'},
+    #package_dir = {'' : 'pythonic_binance'},
     license='MIT',
     author_email='',
     install_requires=['requests' ],
