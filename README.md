@@ -3,6 +3,11 @@
 
 
 [<img src="https://img.shields.io/badge/python--binance-0.7.1-yellow.svg">](https://github.com/sammchardy/python-binance/tree/v0.7.1)
+[<img src="https://img.shields.io/pypi/pyversions/pythonic-binance.svg">](https://pypi.org/project/pythonic-binance/)
+[<img src="https://img.shields.io/pypi/l/pythonic-binance.svg">](https://pypi.org/project/pythonic-binance/)
+
+
+
 
 
 Pythonic_binance is a reduced version of the
