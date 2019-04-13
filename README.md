@@ -1,11 +1,13 @@
 
 # Welcome to pythonic_binance v0.7.1
 
--- shields --
+
+[<img src="https://img.shields.io/badge/python--binance-0.7.1-yellow.svg">](https://github.com/sammchardy/python-binance/tree/v0.7.1)
+
 
 Pythonic_binance is a reduced version of the
 this Python binance api https://github.com/sammchardy/python-binance
-
+https://img.shields.io/badge/pythonic-0.8-blueviolet.svg
 
 
 
