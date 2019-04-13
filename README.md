@@ -1,5 +1,5 @@
 
-# Welcome to pythonic_binance v0.7.1
+# Welcome to pythonic-binance
 
 
 [<img src="https://img.shields.io/badge/python--binance-0.7.1-yellow.svg">](https://github.com/sammchardy/python-binance/tree/v0.7.1)
