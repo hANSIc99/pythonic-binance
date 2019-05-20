@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name='pythonic_binance',
-    version='0.7.1',
+    version='0.7.2',
     packages=['pythonic_binance'],
     description='Binance REST API python implementation',
     url='https://github.com/hANSIc99/pythonic-binance',
