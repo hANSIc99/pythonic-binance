@@ -5,7 +5,8 @@ import hmac
 import requests
 import time
 from operator import itemgetter
-from .helpers import date_to_milliseconds, interval_to_milliseconds
+from .helpers import interval_to_milliseconds
+#from .helpers import date_to_milliseconds
 from .exceptions import BinanceAPIException, BinanceRequestException, BinanceWithdrawException
 
 
@@ -575,9 +576,9 @@ class Client(object):
 
         """
         return self._get('aggTrades', data=params)
-
+    """
     def aggregate_trade_iter(self, symbol, start_str=None, last_id=None):
-        """Iterate over aggregate trade data from (start_time or last_id) to
+        Iterate over aggregate trade data from (start_time or last_id) to
         the end of the history so far.
 
         If start_time is specified, start with the first trade after
@@ -606,7 +607,7 @@ class Client(object):
         each object is identical to Client.aggregate_trades().
 
         :type last_id: int
-        """
+        
         if start_str is not None and last_id is not None:
             raise ValueError(
                 'start_time and last_id may not be simultaneously specified.')
@@ -661,7 +662,7 @@ class Client(object):
             for t in trades:
                 yield t
             last_id = trades[-1][self.AGG_ID]
-
+    """
     def get_klines(self, **params):
         """Kline/candlestick bars for a symbol. Klines are uniquely identified by their open time.
 
@@ -723,10 +724,10 @@ class Client(object):
             endTime=None
         )
         return kline[0][0]
-
+    """
     def get_historical_klines(self, symbol, interval, start_str, end_str=None,
                               limit=500):
-        """Get Historical Klines from Binance
+        Get Historical Klines from Binance
 
         See dateparser docs for valid start and end string formats http://dateparser.readthedocs.io/en/latest/
 
@@ -745,7 +746,7 @@ class Client(object):
 
         :return: list of OHLCV values
 
-        """
+        
         # init our list
         output_data = []
 
@@ -808,9 +809,10 @@ class Client(object):
                 time.sleep(1)
 
         return output_data
-
+    """
+    """
     def get_historical_klines_generator(self, symbol, interval, start_str, end_str=None):
-        """Get Historical Klines from Binance
+        Get Historical Klines from Binance
 
         See dateparser docs for valid start and end string formats http://dateparser.readthedocs.io/en/latest/
 
@@ -827,7 +829,7 @@ class Client(object):
 
         :return: generator of OHLCV values
 
-        """
+        
 
         # setup the max limit
         limit = 500
@@ -887,7 +889,7 @@ class Client(object):
             # sleep after every 3rd call to be kind to the API
             if idx % 3 == 0:
                 time.sleep(1)
-
+    """
     def get_ticker(self, **params):
         """24 hour price change statistics.
 
